@@ -53,7 +53,7 @@ const [tasks, setTasks] = useState([
         <div className="container"> 
             <Header /> 
             <Route 
-              path="/learn-react" 
+              path="/learn-react/" 
               exact 
               render={() =>(
                 <>
