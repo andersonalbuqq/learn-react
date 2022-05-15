@@ -53,7 +53,7 @@ const [tasks, setTasks] = useState([
         <div className="container"> 
             <Header /> 
             <Route 
-              path="/" 
+              path="/learn-react" 
               exact 
               render={() =>(
                 <>
@@ -66,7 +66,7 @@ const [tasks, setTasks] = useState([
                 </>
               )}
             />
-            <Route path="/:taskTitle" exact component={TaskDetails}/>
+            <Route path="/learn-react/:taskTitle" exact component={TaskDetails}/>
         </div>
     </Router>
   );

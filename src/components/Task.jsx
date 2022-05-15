@@ -8,7 +8,7 @@ const Task = ({task, handleTaskClick, handleTaskDelete}) => {
     const histoy = useHistory();
 
     const handleTaskDetailsClick = () => {
-        histoy.push(`/${task.title}`)
+        histoy.push(`/learn-react/${task.title}`)
     } 
 
     return (
