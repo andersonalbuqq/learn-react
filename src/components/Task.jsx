@@ -5,10 +5,10 @@ import { useHistory } from 'react-router-dom';
 import './Task.css';
 
 const Task = ({task, handleTaskClick, handleTaskDelete}) => {
-    const histoy = useHistory();
+    const history = useHistory();
 
     const handleTaskDetailsClick = () => {
-        histoy.push(`/learn-react/${task.title}`)
+        history.push(`/learn-react/${task.title}`)
     } 
 
     return (

@@ -24,7 +24,7 @@ const [tasks, setTasks] = useState([
 
   const handleTaskClick = (taskId) =>{
     const newTasks = tasks.map(task =>{
-      if(task.id == taskId)return{...task, completed: !task.completed}
+      if(task.id === taskId)return{...task, completed: !task.completed}
 
       return task;
     });
@@ -33,7 +33,7 @@ const [tasks, setTasks] = useState([
   }
 
   const handleTaskAddition = (taskTitle) =>{
-    const newTasks = [... tasks, {
+    const newTasks = [...tasks, {
       title: taskTitle,
       id: uuidv4(),
       completed: false,
@@ -43,7 +43,7 @@ const [tasks, setTasks] = useState([
   }
 
   const handleTaskDelete = (TaskId) =>{
-    const removeTask = tasks.filter(task =>{return (task.id != TaskId)});
+    const removeTask = tasks.filter(task =>{return (task.id !== TaskId)});
     
     setTasks(removeTask);
   }
